@@ -1,0 +1,229 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #191919 !important; /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Layout */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Logo Styling with Glow */
+.login-logo {
+    display: block;
+    margin: 0 auto;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    box-shadow: 0 0 15px rgba(255, 223, 186, 0.8); /* Soft glow effect */
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Glowing effect when hovered */
+.login-logo:hover {
+    box-shadow: 0 0 25px rgba(255, 223, 186, 1);
+}
+
+/* Login Box */
+.login-form {
+    background: rgba(255, 255, 255, 0.1); /* Slight transparent background */
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 100%;
+    max-width: 400px; /* Restrict width to make it compact */
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;  /* Softer, rounded corners */
+    background: rgba(239, 234, 234, 0.8);  /* Lighter background */
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+/* Focus effect on inputs */
+input:focus {
+    border: 2px solid #4A90E2;  /* Highlight border on focus */
+    outline: none;
+    background: rgba(0, 0, 0, 0.9);  /* Darker background on focus */
+}
+
+/* Placeholder styling */
+input::placeholder {
+    color: #ccc;  /* Lighter color for placeholder text */
+    font-style: italic;  /* Make placeholder text italic */
+}
+
+/* Submit Button */
+button {
+    width: 100%;
+    background-color: #1e6516; /* Button color */
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #146767; /* Darker shade on hover */
+}
+
+/* Options & Links */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/* Custom Checkbox */
+.options input[type="checkbox"] {
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    border: 2px solid #4A90E2;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Checkmark effect when checked */
+.options input[type="checkbox"]:checked {
+    background: #4A90E2;
+    border-color: #ffffff;
+}
+
+.options input[type="checkbox"]:checked::after {
+    content: "✔";
+    font-size: 10px;
+    color: white;
+}
+
+/* Forgot Password and Remember Me */
+.options label {
+    color: white;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.options a {
+    color: #4A90E2;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.options a:hover {
+    color: #66c2ff;
+    text-decoration: underline;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+hr {
+    margin: 15px 0;
+}
+/* Labels */
+/* Labels */
+label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 5px;
+    text-align: left; /* Align labels to the left */
+    width: 100%; /* Ensure label takes the full width */
+    display: block; /* Ensure label is displayed as a block element */
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: rgba(239, 234, 234, 0.8);
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+/* Options (Checkbox and Remember Me) */
+.options {
+    display: flex;
+    justify-content: flex-start; /* Align options to the left */
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Custom Checkbox */
+.options input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    border: 2px solid #4A90E2;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Checkmark effect when checked */
+.options input[type="checkbox"]:checked {
+    background: #4A90E2;
+    border-color: #ffffff;
+}
+
+.options input[type="checkbox"]:checked::after {
+    content: "✔";
+    font-size: 10px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+}
+
+/* Adjust the positioning of Remember me text */
+.options label {
+    color: white;
+    font-weight: 500;
+    margin-left: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}

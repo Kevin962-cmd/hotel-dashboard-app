@@ -1,0 +1,61 @@
+/* Page Background */
+.page-container {
+    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 80px;
+}
+
+/* Chart Container - Card Design */
+.chart-container {
+    background: #242424;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 900px;
+    margin-top: 100px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Add a subtle hover effect */
+.chart-container:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Title Styling */
+.chart-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #eaeee8f8;
+    margin-bottom: 10px;
+}
+
+/* Subtitle Styling */
+.chart-subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Ensure Chart Responsiveness */
+.chart-container canvas {
+    width: 100% !important;
+    height: auto !important;
+    max-height: 500px;
+}
+
+/* Media Queries - Responsive Adjustments */
+@media (max-width: 768px) {
+    .chart-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .chart-title {
+        font-size: 22px;
+    }
+}

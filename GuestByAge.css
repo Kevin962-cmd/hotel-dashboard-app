@@ -1,0 +1,60 @@
+/* Page Background */
+.page-container-guestbyage {
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 130px; /* ⬆ Increased padding to move content below navbar */
+}
+
+/* Chart Container */
+.chart-container-guestbyage {
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    width: 90%;
+    max-width: 900px; /* ⬅ Reduced max-width */
+    transition: all 0.3s ease-in-out;
+}
+
+/* 2x2 Grid Layout with Better Spacing */
+.chart-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; /* ⬆ Increased gap for better spacing */
+    margin-top: 25px;
+}
+
+/* Individual Chart Box */
+.chart-box {
+    padding: 20px; /* ⬆ Increased padding to create more space */
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    max-width: 320px;
+    margin: 10px; /* ⬆ Added margin for additional spacing */
+}
+
+/* 🖱️ Hover Effect - Makes charts stand out */
+.chart-box:hover {
+    transform: scale(1.05); /* ⬆ Slight scale-up effect */
+    box-shadow: 0 5px 20px rgba(255, 255, 255, 0.3); /* ✨ Subtle glow */
+}
+
+/* Doughnut Chart Styling */
+.chart-box canvas {
+    max-width: 200px !important;
+    max-height: 200px !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .chart-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-box {
+        max-width: 100%;
+    }
+}

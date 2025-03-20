@@ -1,0 +1,128 @@
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  color: white;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Left Section (Logo & Search) */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjust spacing */
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-right: 15px;
+}
+
+/* Search Bar */
+.search-bar {
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  width: 220px;
+  background-color: #2d2d2d;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.search-bar::placeholder {
+  color: #bbb;
+}
+
+.search-bar:focus {
+  background-color: #3a3a3a;
+  width: 260px; /* Expand on focus */
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #007bff;
+}
+
+/* Logout Button */
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user button {
+  background-color: #e63946;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+  margin-right: 20px;
+}
+
+.user button:hover {
+  background-color: #d42f3e;
+}
+
+/* ✅ Ensure Image is Properly Styled */
+/* ✅ Make Image Circular */
+.hotel-logo {
+  width: 60px; /* Adjust size as needed */
+  height: 60px; /* Ensure width & height are equal */
+  object-fit: cover; /* Maintain aspect ratio */
+  border-radius: 50%; /* ✅ Makes the image circular */
+  margin-right: 15px; /* Space between logo and search bar */
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.8)); /* ✅ Subtle Glow Effect */
+}
+/* ✅ Improve Alignment */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adjust spacing */
+}
+
+/* Logout Button */
+.user button {
+  background: linear-gradient(135deg, #7d343a, #b04545); /* ✅ Gradient */
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+  margin-right: 20px;
+  box-shadow: 0 0 8px rgba(255, 100, 100, 0.6); /* ✅ Initial Glow */
+}
+
+/* ✅ Hover Effect */
+.user button:hover {
+  background: linear-gradient(135deg, #5d1017ab, #944043); /* Slightly lighter gradient */
+  box-shadow: 0 0 15px rgba(255, 100, 100, 1); /* ✅ Stronger Glow */
+  transform: scale(1.05); /* ✅ Slight Enlargement */
+}
