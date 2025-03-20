@@ -1,1 +1,1 @@
-# hotel-dashboard-app(Link below is to test my app)
+# hotel-dashboard-app
